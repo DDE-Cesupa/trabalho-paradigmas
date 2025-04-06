@@ -43,6 +43,9 @@ function iniciarBossMode() {
 
     alert("A batalha contra o Pou666 começou! Você tem 10 segundos para derrotá-lo! Se você acumular mais de 5000 cliques, você vencerá!");
 
+    document.body.classList.remove("normal-mode");
+    document.body.classList.add("boss-mode");
+
     let tempoRestante = 10;
     document.getElementById("timer").innerText = tempoRestante;
     
@@ -66,6 +69,8 @@ function iniciarBossMode() {
             document.getElementById("contador").innerText = clicks;
         }
         bossMode = false;
+        document.body.classList.remove("boss-mode");
+        document.body.classList.add("normal-mode");
     }, 10000);
 }
 

@@ -6,13 +6,13 @@
     <title>Pou Clicker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Pou Clicker</h1>
+<body class="normal-mode">
+    <h1 style="color: aliceblue;">Pou Clicker</h1>
     <img id="pou" src="pou_0.webp" alt="Pou" onclick="clicar()">
-    <h3>Clicks: <span id="contador">0</span></h3>
+    <h3 style="color: aliceblue;">Clicks: <span id="contador">0</span></h3>
     <h3 id="timer" style="display: none;">10</h3>
     
-    <h2>Multiplicadores</h2>
+    <h2 style="color: aliceblue;">Multiplicadores</h2>
     <button onclick="comprarMultiplicador(2, 10)">Multiplicador 2X (10 clicks)</button>
     <button onclick="comprarMultiplicador(3, 20)">Multiplicador 3X (20 clicks)</button>
     <button onclick="comprarMultiplicador(5, 30)">Multiplicador 5X (30 clicks)</button>
@@ -20,7 +20,7 @@
     <button onclick="comprarMultiplicador(50, 300)">Multiplicador 50X (300 clicks)</button>
     <button onclick="comprarMultiplicador(100, 500)">Multiplicador 100X (500 clicks)</button>
     
-    <h2>Roupas</h2>
+    <h2 style="color: aliceblue;">Roupas</h2>
     <button onclick="comprarRoupa(15, 'pou_1.png')">Pou Comum (15 clicks)</button>
     <button onclick="comprarRoupa(30, 'pou_2.jpg')">Pou Man Face (30 clicks)</button>
     <button onclick="comprarRoupa(50, 'pou_3.jpeg')">Pou Elegante (50 clicks)</button>
@@ -28,7 +28,7 @@
     <button onclick="comprarRoupa(500, 'pou_5.jpg')">Pou Magnata Capitalista(500 clicks)</button>
     <button onclick="comprarRoupa(1000, 'pou_6.jpg')">Pou Ramon Dino (1000 clicks)</button>
 
-    <h2>Boss</h2>
+    <h2 style="color: aliceblue;">Boss</h2>
     <button onclick="comprarRoupa(2000, 'pou_boss.avif')">Lutar contra Pou666.exe (2000 clicks)</button>
     
     <script src="script.js"></script>
